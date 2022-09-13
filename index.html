@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,35 +11,55 @@
     <!-- Script file -->
     <script src="js/script.js" defer></script>
 </head>
+
 <body>
 
-    <div class="nav">
-        <div class="ul">
-            <div class="li"><a href="#home">HOME</a></div>
-            <div class="li"><a href="#projects">PORTFOLIO</a></div>
-            <div class="li"><a href="#about">SOBRE</a></div>
-            <div class="li"><a href="#footer">CONTATO</a></div>
-        </div>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#projects">PORTFOLIO</a></li>
+            <li><a href="#about">SOBRE</a></li>
+            <li><a href="#footer">CONTATO</a></li>
+        </ul>
+    </nav>
 
-    <div class="container">
-        <div id="home" class="item01"></div>
-        
+    <main>
+
+        <section id="home" class="home">
+
+            <article class="card">
+                <div class="item_card">
+                    <p>Eu sou o Rafael!</p>
+                    <p><a href="https://www.linkedin.com/in/rafaelmourateixeira/" target="_blank">LinkedIn</a></p>
+                    <p><a href="https://github.com/Takamasu" target="_blank">Github</a></p>
+                </div>
+                <div class="item_card">
+                    <!-- PUT THE CONTENT PROJECTS HERE -->
+                </div>
+            </article>
+
+        </section>
+
         <!-- SECTION PROJECTS -->
-        <div id="projects" class="item02">
-            <div class="card">
+
+        <section id="projects" class="item02">
+            <article class="card">
                 <div class="item_card">
-                    <!-- PUT THE CONTENT PROJECTS HERE -->
+                    <img src="https://user-images.githubusercontent.com/19177325/183798967-434e9c9a-59b8-4ae6-b24e-99e720e548aa.png"
+                        alt="" srcset="">
+                    <a href="https://login-m6a326yz6-takamasu.vercel.app/" target="_blank">LINK</a>
                 </div>
                 <div class="item_card">
                     <!-- PUT THE CONTENT PROJECTS HERE -->
                 </div>
-            </div>
-        </div>
-        
-        <div id="about" class="item03"></div>
-        <div id="footer" class="item04"></div>
-    </div>
-    
+            </article>
+        </section>
+
+        <section id="about" class="about"></section>
+
+        <footer id="footer"></footer>
+    </main>
+
 </body>
+
 </html>

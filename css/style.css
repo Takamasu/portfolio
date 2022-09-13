@@ -12,21 +12,8 @@ body {
     margin: auto;
 }
 
-.container {
-}
-
-.item01, .item02, .item03, .item04 {
-    min-height: 100vh;
-    width: 70rem;
-    height: 200px;
-}
-
-.item01 {
-    background-color: red;
-}
-
 /* MENU NAVIGATION */
-.nav {
+nav {
     position: fixed;
     margin: 2rem;
     padding: .5rem;
@@ -38,17 +25,25 @@ body {
     justify-content: flex-end;
 }
 
-.ul {
+nav ul {
     display: flex;
 }
 
-.li {
-    background-color: red;
-    margin-right: 1px;
+nav ul li {
+    margin: 0 5px 0 5px;
     text-align: center;
+    transition: 0.5s;
+    top: 0px;
+    width: 130px;
+    list-style: none;
 }
 
-.li a {
+nav ul li:hover {
+    position: relative;
+    top: -10px;
+}
+
+nav ul li a {
     text-align: center;
     text-decoration: none;
     color: white;
@@ -57,20 +52,41 @@ body {
     transition: 0.5s;
 }
 
-.li a:hover {
+nav ul li a:hover {
     background-color: rgb(0, 121, 121);
+    transform: scale(10);
 }
 
-/* PROJECTS SECTION */
-.item02 {
-    background-color: purple;
+nav ul li a:active {
+    background-color: aqua;
+
+}
+
+.home,
+.item02,
+.about,
+footer {
+    min-height: 100vh;
+    width: 70rem;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.home {
+    background-color: red;
+}
+
+
+/* PROJECTS SECTION */
+.item02 {
+    background-color: purple;
+}
+
 .card {
     background-color: pink;
+    color: blueviolet;
     width: 60rem;
     height: 25rem;
     margin-top: 7rem;
@@ -87,12 +103,18 @@ body {
     transition: 0.5s;
 }
 
+/* ITEM CARD IMG CONFIG */
+.item_card img {
+    max-width: 25rem;
+    height: 18rem;
+}
+
 /* ABOUT SECTION */
-.item03 {
+.about {
     background-color: aqua;
 }
 
 /* CONTACT SECTION */
-.item04 {
+footer {
     background-color: yellow;
 }
