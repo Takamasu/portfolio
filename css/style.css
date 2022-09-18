@@ -30,12 +30,12 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 5px 0 5px;
+    margin: 30px 5px 0 5px;
     text-align: center;
     transition: 0.5s;
     top: 0px;
-    width: 130px;
     list-style: none;
+    height: 50px;
 }
 
 nav ul li:hover {
@@ -63,7 +63,7 @@ nav ul li a:active {
 }
 
 .home,
-.item02,
+.projects,
 .about,
 footer {
     min-height: 100vh;
@@ -75,13 +75,13 @@ footer {
 }
 
 .home {
-    background-color: red;
+    background-color: transparent;
 }
 
 
 /* PROJECTS SECTION */
-.item02 {
-    background-color: purple;
+.projects {
+    background-color: transparent;
 }
 
 .card {
@@ -111,10 +111,10 @@ footer {
 
 /* ABOUT SECTION */
 .about {
-    background-color: aqua;
+    background-color: transparent;
 }
 
 /* CONTACT SECTION */
 footer {
-    background-color: yellow;
+    background-color: transparent;
 }
